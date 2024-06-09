@@ -1,0 +1,72 @@
+$under-line: #e9ae24;
+$green: #bacd92;
+$deep-green: #75a47f;
+$blue: #61759f;
+
+@import '../styles/variables';
+@import '../styles/input_common';
+
+@include mobile {
+  header {
+    display: none;
+  }
+}
+
+@include desktop {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    border-right: 1px solid #d9d9d9;
+    background: #eff4f0;
+    left: 0; //나중 추가
+
+    .header-logo {
+      width: 70px;
+      margin-top: 50px;
+    }
+
+    .header-logo2 {
+      width: 100px;
+      margin: 20px 0;
+    }
+
+    .header-menu {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      // padding-right: 40px;
+    }
+
+    .header-menu li {
+      padding: 8px 20px;
+    }
+
+    .header-menu li.active {
+      background-color: rgba($deep-green, 0.2);
+      border-radius: 8px;
+      padding: 10px 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .header-menu li:hover {
+      background-color: rgba($deep-green, 0.2);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+    }
+    li div {
+      font-size: 15px;
+    }
+    .skill-menu-title {
+      list-style: none;
+      font-size: 14px;
+      border-bottom: 1px solid #ddd;
+      color: #7b7878;
+    }
+  }
+}

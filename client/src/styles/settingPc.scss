@@ -1,0 +1,430 @@
+$under-line: #e9ae24;
+$green: #bacd92;
+$deep-green: #75a47f;
+$blue: #61759f;
+
+@import '../styles/button_common';
+@import '../styles/variables';
+@import '../styles/input_common';
+
+@include desktop {
+  .setting-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 80px 100px 0;
+    border-bottom: 10px;
+
+    .title-list {
+      width: -webkit-fill-available;
+      margin: 50px 0 20px;
+
+      li {
+        margin-left: 20px;
+        list-style: disc;
+        font-size: 16px;
+        color: #777777;
+      }
+    }
+  }
+
+  .setting-wrap2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0;
+    border-bottom: 10px;
+
+    .title-list {
+      width: -webkit-fill-available;
+      margin: 50px 0 20px;
+
+      li {
+        margin-left: 20px;
+        list-style: disc;
+        font-size: 16px;
+        color: #777777;
+      }
+    }
+  }
+  .student-wrap {
+    margin: 130px 100px 50px;
+  }
+
+  .title-wrap-st {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 10px;
+    border-bottom: 2px solid #bacd92;
+    margin-top: 80px;
+    // margin: 0;
+
+    .title-list-st {
+      width: -webkit-fill-available;
+
+      li {
+        margin-left: 20px;
+        list-style: disc;
+        font-size: 16px;
+        color: #777777;
+      }
+    }
+  }
+
+  .pc-wrap {
+    margin: 80px 100px 50px;
+
+    .title-wrap {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      border-bottom: 10px;
+      border-bottom: 2px solid #bacd92;
+      margin: 0;
+
+      .title-list {
+        width: -webkit-fill-available;
+        margin: 50px 0 20px;
+
+        li {
+          margin-left: 20px;
+          list-style: disc;
+          font-size: 16px;
+          color: #777777;
+        }
+      }
+    }
+  }
+
+  .box-style2 {
+    @include boxStyle-common;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    justify-content: center;
+  }
+
+  .box-style {
+    @include boxStyle-common;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 60px;
+    justify-content: center;
+
+    .select-student-id-title {
+      color: #a5a5a5;
+    }
+    .select-title {
+      color: #a5a5a5;
+    }
+
+    .select-school-name {
+      width: -webkit-fill-available;
+      @include select-common;
+      font-size: 14px;
+    }
+
+    .select-school-btn {
+      width: 70px;
+      height: 40px;
+      border: 1px solid $green;
+      border-radius: 12px;
+      color: #ffffff;
+      background-color: $green;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .select-name {
+      width: -webkit-fill-available;
+      @include select-common;
+      font-size: 16px;
+    }
+
+    .select-student-id {
+      display: flex;
+      flex-direction: column;
+
+      select {
+        width: -webkit-fill-available;
+        @include select-common;
+      }
+    }
+
+    .set-input {
+      width: -webkit-fill-available;
+      @include select-common;
+      font-size: 14px;
+    }
+
+    .input-textarea {
+      border: 1px solid #e9ae24;
+      border-radius: 4px;
+    }
+
+    .select-id {
+      display: flex;
+      flex-direction: column;
+
+      select {
+        width: -webkit-fill-available;
+        @include select-common;
+      }
+    }
+  }
+
+  .navi-btn {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    // margin: 0 100px 50px;
+
+    .next-button {
+      @include button-style;
+    }
+
+    .next-button:hover {
+      border: 1px solid $deep-green;
+      background-color: $deep-green;
+    }
+  }
+
+  // .setting-st {
+  //   margin: 0 100px;
+  // }
+
+  .pw-title-list {
+    margin: 10px 0 !important;
+
+    li {
+      font-size: 14px !important;
+    }
+  }
+
+  .frist-next-button {
+    @include button-style;
+    font-size: 14px;
+    width: -webkit-fill-available;
+    // margin: 0 100px;
+  }
+  .frist-next-button:hover {
+    border: 1px solid $deep-green;
+    background-color: $deep-green;
+  }
+
+  .blue-btn {
+    @include blue-btn-style;
+    width: -webkit-fill-available;
+    margin: 30px 100px 0;
+  }
+
+  .set-country-title {
+    color: #a5a5a5;
+    font-size: 14px;
+  }
+  .set-title {
+    color: #a5a5a5;
+    font-size: 14px;
+  }
+
+  .set-country-detail {
+    width: -webkit-fill-available;
+    @include select-common;
+  }
+
+  .set-salary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .set-salary-text {
+      margin: 10px 0 20px 0;
+      font-size: 14px;
+      color: #5c5b5b;
+    }
+
+    select {
+      text-align: center;
+      @include select-common;
+    }
+  }
+
+  .container {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    .count {
+      padding-right: 20px;
+    }
+    .selectSalary {
+      margin-right: 10px;
+      width: 80px;
+    }
+    .unit {
+      font-size: 16px;
+      color: #a5a5a5;
+      position: absolute;
+      right: 30px;
+      margin-bottom: 10px;
+      pointer-events: none;
+    }
+  }
+
+  .display {
+    position: relative;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: start;
+    padding: 8px 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid #75a47f;
+  }
+
+  .display2 {
+    position: relative;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: start;
+    padding: 8px 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid #75a47f;
+  }
+  .accordion-open {
+    background: #75a47f;
+    color: #fff;
+  }
+
+  .studentInfo-upload {
+    margin: 10px 0 0 5px;
+  }
+
+  .studentInfo-input {
+    @include select-common;
+  }
+
+  // 자리 배치도
+  .seat-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .seat-colum {
+      font-size: 14px;
+    }
+
+    .seat-count-select {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+
+      .seat-count-input {
+        width: -webkit-fill-available;
+        text-align: center;
+        @include select-common;
+      }
+
+      .unit {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .reset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .add-remove-btn {
+    display: flex;
+  }
+
+  .preview {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid $deep-green;
+    border-radius: 16px;
+    background-color: $deep-green;
+    text-align: center;
+    margin: 10px 0;
+    overflow-x: scroll;
+
+    .seating-map {
+      padding: 15px;
+
+      .cloumn-num {
+        font-weight: bold;
+        color: #ffffff;
+      }
+
+      .row-container {
+        display: flex;
+        flex-direction: column;
+
+        .cell {
+          border: 1px solid #ffffff;
+          padding: 10px 20px;
+          color: #ffffff;
+        }
+
+        .cell-input {
+          background-color: transparent;
+          border: 1px solid #ffffff;
+          color: #ffffff;
+          text-align: center;
+          padding: 10px 20px;
+          width: 100px;
+          font-size: 14px;
+          margin-top: 20px;
+
+          .cell-input-value {
+            font-size: 14px;
+            color: black;
+          }
+        }
+
+        .cell-input:focus {
+          outline: 4px solid #f77137;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .preview::-webkit-scrollbar {
+    width: 2px;
+  }
+  .preview::-webkit-scrollbar-thumb {
+    background-color: $green;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+  }
+  .preview::-webkit-scrollbar-track {
+    background-color: $deep-green;
+    border-radius: 10px;
+  }
+
+  .non-law {
+    margin: 20px 0;
+    color: #666666;
+    font-size: 12px;
+  }
+
+  .group-header {
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: 800;
+  }
+}
+.delete-img {
+  width: 16px;
+  height: 16px;
+}
